@@ -1,7 +1,6 @@
 {
   "name": "wfe_1_final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"
-  }
+  },
+  "description": ""
 }
