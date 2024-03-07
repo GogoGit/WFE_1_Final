@@ -6,4 +6,8 @@ navTitle: Dad Joke
 pageClass: dadJoke
 ---
 
-##Dad Joke Section
+<!-- > <span class="quote">Put Dad Joke Here</span> -->
+
+<span class="quote">Put Dad Joke Here</span>
+
+<script src="/js/dadjoke.js"></script>

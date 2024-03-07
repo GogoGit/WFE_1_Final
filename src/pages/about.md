@@ -2,7 +2,7 @@
 layout: layout.html
 pageTitle:  MyAboutPage
 tags: ["page", "nav"]
-navTitle: NavTitle-About
+navTitle: About
 ---
 
 

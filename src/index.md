@@ -1,4 +1,21 @@
 ---
+layout:  layout.html
+pageTitle:  MyPageTitleHere
+tags: 
+  - page
+  - nav
+navTitle: Index
+pageClass: classIndex
+---
+
+
+
+<!--
+base-h1.html
+base-layout.html
+combined-Test-layout.html
+
+---
 layout: layout.html
 pageTitle:  MyPageTitleHere
 tags: 
@@ -7,7 +24,11 @@ tags:
 navTitle: NavTitle-Index
 pageClass: classIndex
 ---
-<!--
+
+
+
+
+
 tags: [create collections name spaces] 
     Now it's a variable :)
     check out the nav section in _includes\layout.html

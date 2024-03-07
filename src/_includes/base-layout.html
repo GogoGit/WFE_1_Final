@@ -7,6 +7,8 @@
     <title>{{ site.siteTitle }}</title>  <!-- This is the title on the Web Page!!! -->
   </head>
   <body class="{{ pageClass }}">
+    <p>This is base-layout</p>
+    
     <nav aria-label="Primary navigaton">
         <ul>
             {% for page in collections.page %}
@@ -15,19 +17,4 @@
             </li>
             {% endfor %}
         </ul>
-    </nav>    
-    <main tabindex="-1" class="content">
-      <h1>{{ pageTitle }}</h1>
-      {{ content }}  <!-- refers to the data in your [file].md file -->
-    </main>
-  
-
-    <!-- this runs on all the pages... becuase it's in the _includes
-            Note, when you change the page... you reload the scripts.js and so you wipe out what you see
-            in the console.
-    -->
-    <!-- <script src="/js/scripts.js"></script> -->
-</body>
-</html>
-
-
+    </nav>
