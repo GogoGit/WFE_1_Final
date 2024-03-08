@@ -5,7 +5,7 @@ tags: ["page", "nav"]
 navTitle: Blogs
 ---
 
-<p>format blogs here!</p>
+<div class="blogData">format blogs here!</div>
 
 
 <script src="/js/blogs.js"></script>

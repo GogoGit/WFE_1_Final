@@ -1,9 +1,13 @@
 {
   "name": "wfe_1_final",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "rimraf": "rimraf _site",
+    "11ty": "eleventy --serve",
+    "sass": "sass src/scss/styles.scss src/css/styles.css --watch --source-map",
+    "start": "npm-run-all -p rimraf 11ty sass"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +15,9 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"
   },
-  "description": ""
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "sass": "^1.71.1"
+  }
 }

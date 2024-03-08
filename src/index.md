@@ -119,3 +119,20 @@ This is how you create a class in the <body> where you can apply special css rul
             - scripts.js
         - pages
             - ???
+
+## New Changes that need to be refactored
+1. Adding the following node packages:
+    - rimraf (used to delete files/folders, command: rm -rf)
+    - sass
+
+2. Updated the 'start' command:
+    - "start": "npm-run-all -p rimraf 11ty sass"
+        - npm-run-all (used becuase of the bug when using Windows vs Mac where not all packages load)
+        - '-p' (run in parralell)
+
+3. That means you need to install those packages
+    - npm install @11ty/eleventy@latest
+    - npm install rimraf@latest
+    - npm install sass@latest
+
+4. Added a folder 'data', need to modify eleventy.js to add that file

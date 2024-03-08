@@ -92,7 +92,7 @@ fetch('https://icanhazdadjoke.com/', {
 // }
 
 function getDadJoke_fetch(){
-    fetch('https://icanhazdadjoke.com1/', {
+    fetch('https://icanhazdadjoke.com/', {
         headers: {
             "User-Agent": "Web Front End Final Project",
             "Accept": "application/json"
