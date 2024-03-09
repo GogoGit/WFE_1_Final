@@ -1,6 +1,3 @@
-
-
-
 function populateBlogs(objData){
     if (objData === null){
         console.warn("Problem Loading Blog Data, Update User with message... maybe image of indicating problem");
@@ -14,7 +11,7 @@ function populateBlogs(objData){
         myHTML += `
         <article>
             <h2>${data.title}</h2>
-            <p><time datetime="${data.title}">${data.title}</time></p>`
+            <h3><time datetime="${data.date}">Date: ${data.date}</time></h3>`
 
         
         if (data.hasOwnProperty("image")){
@@ -37,8 +34,8 @@ function populateBlogs(objData){
         document.querySelector(".blogData").innerHTML = myHTML;
       };
 
-    console.log("Populate Blog Data with....");
-    console.log(myHTML);
+    // console.log("Populate Blog Data with....");
+    // console.log(myHTML);
 }
 
 
@@ -49,14 +46,9 @@ function getBlogs(){
     .then(response => response.json())
     // .then(response => response.text())
     .then(data => {
-        console.log("data");
-        console.log(data);
-        console.log(typeof data);
         populateBlogs(data);
-        // let output = '<h2>Blog Entries<h2>';
     })
     .catch(error => {
-        console.log("error");
         console.log(error);
     })
 }
@@ -64,6 +56,29 @@ function getBlogs(){
 getBlogs();
 
 
+// function addPost(e){
+//     e.preventDefault();
+
+//     let title = document.getElementById('title').value;
+//     let body = document.getElementById('body').value;
+
+//     fetch('', 
+//         {
+//             method:'POST',
+//             headers: {
+//                 'Accept': 'application/json, text,plain, */*',
+//                 'Content-type':'application/json'
+//             },
+//             body:JSON.stringify({title:title, body:body})
+//         }
+//     )
+//     .then((response) => response.json())
+//     .then((udpate) => console.log(udpate))
+// }
+
+
+//event listeners
+// document.getElementById('addPost').addEventListener('submit', addPost)
+
+
 console.log("blogs.js ran")
-// var path = document.location.pathname;
-// console.log(path);
