@@ -22,4 +22,3 @@ I play lots of games. Board games, Table top games, Video games and sometimes wo
 As a child, i didn't like to read, but I do now!
 If I've piqued your interest come and check out my blog!
 
-[Home](/)

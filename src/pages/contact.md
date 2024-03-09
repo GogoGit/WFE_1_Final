@@ -1,11 +1,17 @@
 ---
+layout: layouts/layout.html
 pageTitle: Contact Us
 navTitle: Contact
-date: 2019-04-01
+pageClass: contact
 ---
 
-## Need to create a form maybe????
+{{ content }}
+
+<article>{% include "components/contact.html" %}</article>
+
+
+<!-- ## Need to create a form maybe????
 
 <p>Put stuff on this page</p>
 
-[Home](/)
+[Home](/) -->

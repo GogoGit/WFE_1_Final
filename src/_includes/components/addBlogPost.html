@@ -1,0 +1,31 @@
+<form name="addBlogPost" method="POST" action="/" autocomplete="true">
+    <fieldset>
+        <legend>Create blog post</legend>
+
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" id="date" placeholder="How Do I put Put Today's Date Here???">
+            <!-- <input required type="date" id="date" placeholder="How Do I put Put Today's Date Here???"> -->
+        </div>
+        <div>
+            <label for="title">Title: </label>
+            <input type="text" id="title" placeholder="Title">
+            <!-- <input required type="text" id="title" placeholder="Title"> -->
+        </div>
+        <div>
+            <label for="image">Image: Work in Progess... coming soon! </label>
+            <!-- Put control for uplaoding images here -->
+            
+            <!-- Enable section below once above is working -->
+            <!-- <label for="imageDescription">Image description</label>
+            <input type="text" id="imageDescription" placeholder="Image description"> -->
+        </div>
+        <div>
+            <div><label for="body">Blog</label></div>
+            <div><textarea id="body" placeholder="Tell the world what you are thinking!" rows="4" cols="30"></textarea></div>
+            <!-- <div><textarea required id="body" placeholder="Tell the world what you are thinking!" rows="4" cols="30"></textarea></div> -->
+        </div>
+
+        <input type="submit" value="Submit">    
+    </fieldset>
+</form>

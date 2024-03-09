@@ -3,22 +3,11 @@
     <a href="#" id="pull"></a>  <!-- This creates a hamburger when the screen is small ... look at css -->
     <ul>
       {% for nav in collections.nav %}
-      <!-- If statement using Templating language -->
-      <li class="{% if nav.url == page.url %} active{% endif %}">
-        <a href="{{ nav.url | url }}">{{ nav.data.navTitle }}</a>
-      </li>
+        <!-- If statement using Templating language -->
+        <!--  adds the class 'active' to the url that is being viewed -->
+        <li class="{% if nav.url == page.url %} active{% endif %}">
+          <a href="{{ nav.url | url }}">{{ nav.data.navTitle }}</a>
+        </li>
       {%- endfor -%}
     </ul>
   </nav>
-
-<!-- Old Nav 
-<nav aria-label="Primary navigaton">
-    <ul>
-        {% for page in collections.page %}
-        <li>
-            <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>  
-        </li>
-        {% endfor %}
-    </ul>
-</nav>
- -->

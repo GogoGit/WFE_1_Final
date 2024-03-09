@@ -1,0 +1,44 @@
+<form name="contact" method="POST" action="/" autocomplete="true">
+  <fieldset>
+    <legend>Enter your info</legend>
+    <label for="name">Your name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Name"
+      required
+      autocomplete="off"
+      autofocus
+    />
+
+    <label for="email">Email address</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Email"
+      required
+      autocomplete="off"
+    />
+
+    <label for="website">Website</label>
+    <input
+      type="url"
+      id="website"
+      name="website"
+      required
+      placeholder="http://www.example.com"
+    />
+
+    <label for="message">Your message</label>
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Your message"
+      rows="7"
+    ></textarea>
+
+    <button type="submit" name="submit">Send Message</button>
+  </fieldset>
+</form>
