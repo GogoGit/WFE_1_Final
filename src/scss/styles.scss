@@ -1,0 +1,175 @@
+$break-sm: 480px;
+$break-med: 768px;
+$break-wide: 980px;
+
+$max-width: 980px;
+
+$link: #007eb6;
+$hover: #df3030;
+$text: #333;
+$med-gray: #666;
+$light-gray: #ddd;
+$dk-yellow: #dbd1b5;
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #333;
+    font-size: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007eb6;
+  }
+  
+  // nav ul {
+  //   padding: 0;
+  //   list-style: none;
+  //   display: flex;
+  // }
+  
+  // nav ul a {
+  //   padding: 0.5rem 1rem;
+  // }
+  
+  .content {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-left: 2px solid #007eb66e;
+    border-radius: 4px;
+  }
+  
+  .nav-item-active a {
+    color: #fff;
+    background-color: #007eb6;
+    border-radius: 4px;
+  }
+  
+  .pictures img {
+    max-width: 50%;
+  }
+  .pictures h1 {
+    color: rgb(25, 152, 25);
+  }
+  
+  figcaption {
+    font-size: 0.8rem;
+  }
+  
+  .stories .item {
+    border-bottom: 1px dashed #aaa;
+  }
+  
+  @media (min-width: 480px) {
+    .stories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+
+  
+  //This is nesting
+
+header {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding-top: 2rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    //last 15 minutes you missed something about mobile 1st design
+    
+    p {
+      display: none;
+      @media (min-width: $break-med) {
+        display: block;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    // Review on Video it chooses the next p after an h1
+    //
+    h1 + p {
+      padding-top: 1rem;
+      border-top: 3px double $dk-yellow;
+    }
+    
+    // Review on Video it chooses the next p after an h1
+    //    
+    p + p {
+      font-size: 1rem;
+      line-height: 1.1;
+      color: $med-gray;
+    }
+  }
+
+
+
+
+  #pull {
+    display: block;
+    background-color: $link;
+    padding-top: 12px;
+    padding-left: 12px;
+    width: 100vh;
+  }
+  
+//   psuedo class
+  #pull::after {
+    content: "";
+    background: url(../img/nav-icon.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    display: inline-block;
+  }
+
+  nav ul {
+    // display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: $link;
+  }
+  
+
+//   nesting with the Scss feature &:hover
+  nav a {
+    padding: 1rem;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  nav li:hover:not(.active) {
+    background-color: lighten($link, 10%);
+  }
+  
+  nav .active {
+    background-color: darken($link, 10%);
+  }
+  
+  nav .active a {
+    font-weight: bold;
+  }
+
+

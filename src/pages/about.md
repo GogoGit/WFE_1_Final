@@ -1,7 +1,5 @@
 ---
-layout: layout.html
 pageTitle:  MyAboutPage
-tags: ["page", "nav"]
 navTitle: About
 ---
 

@@ -1,12 +1,22 @@
+<header>
+  <h1>H1 Header</h1>
+  <p>We have some kind of Paragraph</p>
+  <p>Look another Paragraph</p>
+</header>
+
+<!-- Old Header
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>{{ site.siteTitle }}</title>  <!-- This is the title on the Web Page!!! -->
+    <title>{{ site.siteTitle }}</title>
   </head>
   <body class="{{ pageClass }}">
+    <p>This is base-layout</p>
+    
     <nav aria-label="Primary navigaton">
         <ul>
             {% for page in collections.page %}
@@ -15,15 +25,5 @@
             </li>
             {% endfor %}
         </ul>
-    </nav>    
-
-    <main tabindex="-1" class="content">
-      <h1>{{ pageTitle }}</h1>
-      {{ content }}  <!-- refers to the data in your [file].md file -->
-    </main>
-   
-
-</body>
-</html>
-
-
+    </nav>
+  -->

@@ -1,6 +1,4 @@
 ---
-layout: layout.html
-tags: ["page", "nav"]
 pageTitle: Apples
 navTitle: Pictures
 singleImage: /img/apples.png

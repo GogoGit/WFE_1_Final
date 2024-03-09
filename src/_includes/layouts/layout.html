@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "components/head.html" %}
+
+  <body class="{{ pageClass }}">
+    {% include "components/nav.html" %}
+    {% include "components/header.html" %}
+
+    <main class="content" tabindex="-1">
+      <h1>{{ pageTitle }}</h1>
+
+      {{ content }}
+    </main>
+
+    <script src="/js/scripts.js"></script>
+    
+    <!-- Below is when we are ready to monularize our JavaScripts -->
+    <!-- <script type="module" src="/js/scripts.js"></script> -->
+  </body>
+</html>
+
+
+<!-- Original Layout file
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{ site.siteTitle }}</title>
+  </head>
+  <body class="{{ pageClass }}">
+    
+
+    <main tabindex="-1" class="content">
+      <h1>{{ pageTitle }}</h1>
+      {{ content }}
+    </main>
+   
+
+</body>
+</html>
+
+
+-->
