@@ -56,15 +56,6 @@ function formatBlogData(datas){
 
                     if (data.hasOwnProperty("image_srcset")){
                         mySrcSet = `srcset="${data.image_srcset}"`
-                        
-                        // let myArr = (data.image_srcset).split(",");
-
-                        // myArr.forEach(item => {
-                        //     mySrcSet += `${item},`;
-                        //     console.log(item);
-                        // });
-                        
-                        // mySrcSet += `srcset="$(mySrcSet)"`;
                     }
 
                     myHTML += `<figure><img src="${data.image}"
@@ -73,15 +64,24 @@ function formatBlogData(datas){
                         ></figure>`
                 };
     
-            myHTML += `    
-                <p>${data.body}</p>
-            </article>`;
+            
+            myHTML += formatBlogData_Text(data.body)
+            myHTML +=`</article>`
+            // myHTML += `    
+            //     <p>${data.body}</p>
+            // </article>`;
         }
     };
 
     return myHTML
 }
 
+function formatBlogData_Text(bodyData){
+    let arrData = bodyData.split("\n");
+    let htmlData = ""
+    arrData.forEach((item) => {htmlData += `<p>${item}</p>\n`});
+    return htmlData
+}
 
 //Event listeners
 
