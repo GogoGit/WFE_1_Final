@@ -4,9 +4,7 @@
 //Functions
 function getBlogs(){
     fetch('/data/blogs.json')
-    // fetch('/data/Text.txt')
     .then(response => response.json())
-    // .then(response => response.text())
     .then(data => {
         populateBlogs(data);
     })
@@ -50,16 +48,34 @@ function formatBlogData(datas){
                 <h3><time datetime="${data.date}">Date: ${data.date}</time></h3>`
     
                 if (data.hasOwnProperty("image")){
-                    let myAlt = "Unknown"
+                    let myAlt = "Unknown";
+                    let mySrcSet = "";
                     if (data.hasOwnProperty("image_description")){
-                        myAlt ="${data.image_description}"
+                        myAlt =`${data.image_description}`
                     }
-                    myHTML += `<img src="${data.image}" alt="$(myAlt)">`
+
+                    if (data.hasOwnProperty("image_srcset")){
+                        mySrcSet = `srcset="${data.image_srcset}"`
+                        
+                        // let myArr = (data.image_srcset).split(",");
+
+                        // myArr.forEach(item => {
+                        //     mySrcSet += `${item},`;
+                        //     console.log(item);
+                        // });
+                        
+                        // mySrcSet += `srcset="$(mySrcSet)"`;
+                    }
+
+                    myHTML += `<figure><img src="${data.image}"
+                        alt="${myAlt}"
+                        ${mySrcSet}
+                        ></figure>`
                 };
     
             myHTML += `    
                 <p>${data.body}</p>
-            </article>`
+            </article>`;
         }
     };
 

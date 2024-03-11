@@ -17,7 +17,7 @@ body {
 
 #pull::after {
   content: "";
-  background: url(../img/nav-icon-burger.jpg) no-repeat;
+  background: url(../img/icons/nav-icon-burger.png) no-repeat;
   width: 22px;
   height: 22px;
   background-size: cover;
@@ -73,6 +73,12 @@ nav .active a {
   flex-direction: column;
   position: absolute;
   width: 100%;
+}
+
+@media (min-width: 980px) {
+  body {
+    background-color: red;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

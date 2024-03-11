@@ -26,13 +26,16 @@
       "userId": 1,
       "id": 4,
       "date": "10/4/2023",
+      "image": "/img/G_cat_trap.jpg",
+      "image_description": "Guinevere (cat) sitting in a cat trapS.",
+      "image_srcset": "/img/sizes/G_cat_trap_(break-sm-200).jpg 200w,/img/sizes/G_cat_trap_(break-sm-480).jpg 480w,/img/sizes/G_cat_trap_(break-med-600).jpg 600w,/img/sizes/G_cat_trap_(break-med-768).jpg 768w,/img/sizes/G_cat_trap_(break-wide-800).jpg 800w,/img/sizes/G_cat_trap_(break-wide-900).jpg 900vw",
       "title": "eum et est occaecati",
       "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
     },
     {
       "userId": 1,
-      "date": "11/21/2023",
       "id": 5,
+      "date": "11/21/2023",
       "title": "nesciunt quas odio",
       "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
     },
@@ -40,6 +43,9 @@
       "userId": 1,
       "id": 6,
       "date": "12/31/2023",
+      "image": "/img/Sir_cat_nap.jpg",
+      "image_description": "Sir Lancelot (cat) napping.",
+      "image_srcset": "/img/sizes/Sir_cat_nap_(break-sm-200).jpg 200w,/img/sizes/Sir_cat_nap_(break-sm-480).jpg 480w,/img/sizes/Sir_cat_nap_(break-med-600).jpg 600w,/img/sizes/Sir_cat_nap_(break-med-768).jpg 768w,/img/sizes/Sir_cat_nap_(break-wide-800).jpg 800w,/img/sizes/Sir_cat_nap_(break-wide-900).jpg 900vw",
       "title": "dolorem eum magni eos aperiam quia",
       "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
     },
@@ -54,6 +60,9 @@
       "userId": 1,
       "id": 8,
       "date": "2/26/2024",
+      "image": "/img/BookShelf.jpg",
+      "image_description": "Bookshelp .",
+      "image_srcset": "/img/sizes/BookShelf_(break-sm-200).jpg 200w,/img/sizes/BookShelf_(break-sm-480).jpg 480w,/img/sizes/BookShelf_(break-med-600).jpg 600w,/img/sizes/BookShelf_(break-med-768).jpg 768w,/img/sizes/BookShelf_(break-wide-800).jpg 800w,/img/sizes/BookShelf_(break-wide-900).jpg 900vw",
       "title": "dolorem dolore est ipsam",
       "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
     },
@@ -61,6 +70,9 @@
       "userId": 1,
       "id": 9,
       "date": "3/3/2024",
+      "image": "/img/PileOfBricks.jpg",
+      "image_description": "Pile of bricks to dispose of.",
+      "image_srcset": "/img/sizes/PileOfBricks_(break-sm-200).jpg 200w,/img/sizes/PileOfBricks_(break-sm-480).jpg 480w,/img/sizes/PileOfBricks_(break-med-600).jpg 600w,/img/sizes/PileOfBricks_(break-med-768).jpg 768w,/img/sizes/PileOfBricks_(break-wide-800).jpg 800w,/img/sizes/PileOfBricks_(break-wide-900).jpg 900vw",
       "title": "nesciunt iure omnis dolorem tempora et accusantium",
       "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
     },
@@ -68,6 +80,9 @@
       "userId": 1,
       "id": 10,
       "date": "4/17/2024",
+      "image": "/img/G_sleeping_princess.jpg",
+      "image_description": "Guinevere (cat) sleeping princess.",
+      "image_srcset": "/img/sizes/G_sleeping_princess_(break-sm-200).jpg 200w,/img/sizes/G_sleeping_princess_(break-sm-480).jpg 480w,/img/sizes/G_sleeping_princess_(break-med-600).jpg 600w,/img/sizes/G_sleeping_princess_(break-med-768).jpg 768w,/img/sizes/G_sleeping_princess_(break-wide-800).jpg 800w,/img/sizes/G_sleeping_princess_(break-wide-900).jpg 900vw",
       "title": "optio molestias id quia eum",
       "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
     }
