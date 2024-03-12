@@ -1,8 +1,8 @@
----
+<!-- ---
 pageTitle: Apples
 navTitle: Pictures
 pageClass: pictures
----
+--- -->
 
 <!-- 
 removed the following

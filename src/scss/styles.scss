@@ -1,136 +1,55 @@
-$break-sm: 480px;
-$break-med: 768px;
-$break-wide: 980px;
-
-$max-width: 980px;
-
-$link: #007eb6;
-$hover: #df3030;
-$text: #333;
-$med-gray: #666;
-$light-gray: #ddd;
-$dk-yellow: #dbd1b5;
+@import "imports/variables.scss";
+@import "imports/base.scss";
+@import "imports/nav.scss";
 
 
-body {
-    background-color: lightblue;
-}
+@media (max-width: $break-sm) {
+    body{
+        // background-color: rgb(255, 250, 250);
+        background-color: $light-gray;
+    }
 
-#pull {
-    display: block;
-    background-color: $link;
-    padding-top: 12px;
-    padding-left: 12px;
-    width: 100vh;
-    @media (min-width: $break-med) {
-        display:none;
+    h1 {
+        font-size:x-large;
     }
     
-}
-  
-#pull::after {
-    content: "";
-    
-    background: url(../img/icons/nav-icon-burger.png) no-repeat;
-    width: 22px;
-    height: 22px;
-    background-size: cover;
-    display: inline-block;    
-}
-
-nav ul {
-    display: none;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: $link;
-
-    @media (min-width: $break-med) {
-        display: flex;
-        justify-content: space-around;
-        background: $link;
-        text-align: center;   
+    h2 {
+        font-size:large;
     }
 
-}
-  
-nav a {
-    padding: 1rem;
-    color: #fff;
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    &:hover {
-        text-decoration: none;
+    figure{
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 5px 5px 5px;
+        // font-size:large;
     }
 }
 
-//refactor this for large Screens
-// nav li:hover:not(.active) {
-//     background-color: lighten($link, 10%);
-// }
-nav li {
-    &:hover:not(.active) {
-        background-color: lighten($link, 10%);
+@media screen and (min-width: $break-sm) {
+    body {
+        background-color: $dk-yellow;
     }
 
-    @media (min-width: $break-med) {
-        flex-grow: 1;
+    p {
+        margin: 10px 16px 10px 16px;
+    }
+
+    h3 {
+        
+        margin-left: 10px;
     }
 }
 
-
-nav .active {
-    background-color: darken($link, 10%);
+@media screen and (min-width: $break-med) {
+    body {
+        background-color: $med-gray;
+    }
 }
-
-nav .active a {
-    font-weight: bold;
-}
-
-.show-nav nav ul {
-    // display: block;
-    // position: absolute;
-    // width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-}
-
-
-
-// nav ul {
-//     padding: 0;
-//     list-style: none;
-//     display: flex;
-// }
-
-// nav ul a {
-//     padding: 0.5rem 1rem;
-// }
-
-
-// @media screen and (min-width: $break-sm) {
-//     body {
-//         background-color: lightgreen;
-//     }
-// }
-
-// @media screen and (min-width: $break-med) {
-//     body {
-//         background-color: lavender;
-//     }
-// }
 
 // @media screen and (min-width: $break-wide) {
 //     body {
-//         background-color: lavender;
+//         background-color: rgb(54, 54, 246);
 //     }
 // }
-@media (min-width: $max-width) {
-    body{
-        background-color: red;
-    }
-}

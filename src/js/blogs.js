@@ -67,9 +67,6 @@ function formatBlogData(datas){
             
             myHTML += formatBlogData_Text(data.body)
             myHTML +=`</article>`
-            // myHTML += `    
-            //     <p>${data.body}</p>
-            // </article>`;
         }
     };
 

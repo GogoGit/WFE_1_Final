@@ -22,6 +22,24 @@ tags:
 1. list 1
 1. list 2
 
+
+## So Many Questions
+
+1. .scss clean up, how do I handle media queries?
+1. Nav Bar:  How do you order the sequence properly?
+1. Contact Us
+    - Why is the contact page not indented properly.  It has an extra <p> tag in it.
+1. Add Blog
+    - Why does the button seem indented a little?
+1. Blog
+    - using 'srcset', why do the images not work when on a large screen?  I needed to use 'size' vm VS 'size' m?
+1. What do I do about the root file???
+
+
+
+## Solved Items:
+
+1. Pictures.md: When I removed the file I needed to restart my local dev enviroment so the _site folder could get deleted and recreated without the file.
 <!-- [Home](/) -->
 
 
