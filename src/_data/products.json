@@ -1,0 +1,5 @@
+[
+	{ "name": "Electric toasters ", "price": 2.99, "description": "something", "shippingTimeInDays":9 },
+	{ "name": "goo", "price": 9.99, "description": "something else", "shippingTimeInDays":8 },
+	{ "name": "zoo", "price": 1.50, "description": "something more", "shippingTimeInDays":10 }
+]

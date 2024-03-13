@@ -25,8 +25,15 @@ tags:
 
 ## So Many Questions
 
+1. Pagination is so cool but why do I have an extra empty link:
+    - looking at the link it says the href = /blob/1/ which is the 1st blog?
+    - looking at the nav bar I have a blank spot.
+1. netlify.com forms were enabled!
+    - partially working. The Thank you use to work but now it doesn't.
+    - I do see the data that is posted from the form when I check the form section on netlify.
 1. Not sure why the scroll bar is back.
     - What I did to fix it doesn't work now.
+    - Good News is only when the screen is super small.
 1. Console Error now with srcset:
     - failed parsing 'srcset' attribute value since it's 'w' descriptor is invalid.
     - Partly solved:  removed the w from '200vw' for example.
@@ -42,67 +49,9 @@ tags:
     - This looks like a good mystery..(Double Check did you delete and leave something behind???)
 1. Add Blog
     - Why does the button seem indented a little?
-1. Blog
-    - using 'srcset', why do the images not work when on a large screen?  I needed to use 'size' vm VS 'size' m?
-1. What do I do about the root file???
 
 
 
 ## Solved Items:
 
 1. Pictures.md: When I removed the file I needed to restart my local dev enviroment so the _site folder could get deleted and recreated without the file.
-<!-- [Home](/) -->
-
-
-<!--
-navTitle: Index
-permalink: /
-
-base-h1.html
-base-layout.html
-combined-Test-layout.html
-
----
-layout: layout.html
-pageTitle:  MyPageTitleHere
-tags: 
-  - page
-  - nav
-navTitle: NavTitle-Index
-pageClass: classIndex
----
-
-
-
-
-
-tags: [create collections name spaces] 
-    Now it's a variable :)
-    check out the nav section in _includes\layout.html
-
-Note you can create your own variables their too, look at pictures.md
-
-singleImage: /img/apples.png
-images:
-  - apples.png
-  - apples-red.png
-  - apples-group.png
-
-    singleImage:  is a single image
-    images is an array
-
-pageClass: [Name]
-
-This is how you create a class in the <body> where you can apply special css rules
-
-
-
-*** _data  (Globally avialable)
-    filename.json
-
-    > so data will be available as filename.[data in json file]
-
-    
-
--->
-

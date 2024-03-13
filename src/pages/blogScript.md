@@ -1,7 +1,7 @@
 ---
-pageTitle:  Blog
-navTitle: Blog
-pageClass: blog
+pageTitle:  BlogScript
+navTitle: BlogScript
+pageClass: BlogScript
 ---
 
 ## Articles

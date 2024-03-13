@@ -23,7 +23,8 @@ function handleSubmit(event) {
   let fetchURL = "";
 
   if (document.querySelector("body").classList.contains("addBlog")){
-    let fetchURL = "http://localhost:3456/apiAddBlog";
+    // let fetchURL = "http://localhost:3456/apiAddBlog";
+    let fetchURL = "/";
   }else if (document.querySelector("body").classList.contains("contact")) {
     // let fetchURL = "http://localhost:3456/apiAddContact";
     let fetchURL = "/";
@@ -39,9 +40,9 @@ function handleSubmit(event) {
   const formData = Object.fromEntries(new FormData(event.target));
   //console.log(" form data ", formData);
   fetch(`${fetchURL}`, {
-    headers: {
-      "Content-Type": "application/json",
-    },
+    // headers: {
+    //   "Content-Type": "application/json",
+    // },
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
@@ -60,16 +61,5 @@ function handleSubmit(event) {
 document.addEventListener("submit", handleSubmit);  //Submit on Forms
 hamburger.addEventListener("click", showMenu);      //Nav Bar
 
-//Need to figure this out!
-// document.addEventListener("click", function(event){
-//   if (event.target.innerText.includes('Blog')){
-//     getBlogs();
-//   } else {
-//     console.log(event.target)
-//   }
-// });
-
-
-
-
 //Code Execution
+

@@ -1,0 +1,15 @@
+---
+pagination:
+   data: blogsData
+   size: 1
+   alias: blog
+permalink: "/blog/{{blog.id | slug}}/"
+eleventyComputed:
+   title: "{{ blog.id }}"
+---
+
+<h2>asdf - {{ blog.title }}</h2>
+
+<p>Date: {{ blog.date }}</p>
+
+<p>{{ blog.body }}</p>

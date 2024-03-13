@@ -22,7 +22,7 @@ body {
 }
 @media screen and (min-width: 980px) {
   body {
-    background-color: rgb(54, 54, 246);
+    background-color: rgb(143, 143, 234);
   }
 }
 @media screen and (max-width: 480px) {
