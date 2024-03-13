@@ -66,6 +66,6 @@ nav .active a {
 .show-nav nav ul {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: absolute;     //Shifts you to the Z axis!
     width: 100%;
 }

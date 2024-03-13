@@ -25,7 +25,8 @@ function handleSubmit(event) {
   if (document.querySelector("body").classList.contains("addBlog")){
     let fetchURL = "http://localhost:3456/apiAddBlog";
   }else if (document.querySelector("body").classList.contains("contact")) {
-    let fetchURL = "http://localhost:3456/apiAddContact";
+    // let fetchURL = "http://localhost:3456/apiAddContact";
+    let fetchURL = "/";
   };
   
   // WOW THIS IS AMAZING!!!
@@ -46,7 +47,7 @@ function handleSubmit(event) {
     body: new URLSearchParams(formData).toString(),
     // body: JSON.stringify(formData),
   })
-    .then(() => navigate("/thank-you/"))  
+    .then(() => navigate("/thank-you/"));
     .catch((error) => alert(error));
     // .then((response) => response.json())
     // .then((data) => console.log(data))
