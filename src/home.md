@@ -27,8 +27,11 @@ tags:
 
 1. .scss clean up, how do I handle media queries?
 1. Nav Bar:  How do you order the sequence properly?
+    - Currently it uses the creation date it was created
+    - Need to use Templating Language to sort it.
 1. Contact Us
     - Why is the contact page not indented properly.  It has an extra <p> tag in it.
+    - This looks like a good mystery..(Double Check did you delete and leave something behind???)
 1. Add Blog
     - Why does the button seem indented a little?
 1. Blog

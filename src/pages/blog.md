@@ -1,6 +1,7 @@
 ---
-pageTitle:  Blogs
-navTitle: Blogs
+pageTitle:  Blog
+navTitle: Blog
+pageClass: blog
 ---
 
 ## Articles
@@ -10,4 +11,4 @@ navTitle: Blogs
 <div class="blogData">format blogs here!</div>
 
 
-<script src="/js/blogs.js"></script>
+ <script src="/js/blogs.js"></script> -->

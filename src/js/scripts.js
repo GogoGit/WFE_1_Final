@@ -1,26 +1,24 @@
+//Import Statements
+// import { getBlogs } from "./modules/blogs.js"
+
 //Variables
-
-
 var hamburger = document.querySelector("#pull");
 var body = document.querySelector("body");
 
+
 //Functions
-
-
 // Hamburger Section
-
-
-
 function showMenu(event) {
-  //console.log('event',event);
-  //console.log('event target',event.target);
+  console.log('event',event);
+  console.log('event target',event.target);
+  
   body.classList.toggle("show-nav");
+  
   event.preventDefault();
 }
 
-
-
 function handleSubmit(event) {
+  console.log(event);
   event.preventDefault();
   let fetchURL = "";
 
@@ -54,9 +52,20 @@ function handleSubmit(event) {
 }
 
 
-
 //Event listeners
 document.addEventListener("submit", handleSubmit);  //Submit on Forms
 hamburger.addEventListener("click", showMenu);      //Nav Bar
+
+//Need to figure this out!
+// document.addEventListener("click", function(event){
+//   if (event.target.innerText.includes('Blog')){
+//     getBlogs();
+//   } else {
+//     console.log(event.target)
+//   }
+// });
+
+
+
 
 //Code Execution

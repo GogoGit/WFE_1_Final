@@ -2,6 +2,7 @@
 
 
 //Functions
+// export function getBlogs(){
 function getBlogs(){
     fetch('/data/blogs.json')
     .then(response => response.json())

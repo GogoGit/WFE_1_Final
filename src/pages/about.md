@@ -1,6 +1,7 @@
 ---
 pageTitle:  MyAboutPage
 navTitle: About
+pageClass: about
 ---
 
 
