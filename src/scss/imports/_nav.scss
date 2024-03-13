@@ -3,9 +3,15 @@
     background-color: $link;
     padding-top: 12px;
     padding-left: 12px;
-    width: 100vh;
-    @media (min-width: $break-med) {
-        display:none;
+     width: 100vh;
+
+    @media screen and (max-width: $break-med){
+        // width: 100%;  //Removes horizontal scroll bar when screen width is tiny.
+        width: auto;
+    }
+
+    @media screen and (min-width: $break-med) {
+        display:none; 
     }
 }
   
@@ -26,7 +32,7 @@ nav ul {
     list-style: none;
     background-color: $link;
 
-    @media (min-width: $break-med) {
+    @media screen and (min-width: $break-med) {
         display: flex;
         justify-content: space-around;
         background: $link;
@@ -50,7 +56,7 @@ nav li {
         background-color: lighten($link, 10%);
     }
 
-    @media (min-width: $break-med) {
+    @media screen and (min-width: $break-med) {
         flex-grow: 1;
     }
 }

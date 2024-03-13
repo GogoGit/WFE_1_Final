@@ -25,7 +25,15 @@ tags:
 
 ## So Many Questions
 
+1. Not sure why the scroll bar is back.
+    - What I did to fix it doesn't work now.
+1. Console Error now with srcset:
+    - failed parsing 'srcset' attribute value since it's 'w' descriptor is invalid.
+    - Partly solved:  removed the w from '200vw' for example.
+    - Still need the last srcset option to have '900vw' so at the largest size, images still load.
 1. .scss clean up, how do I handle media queries?
+    - you should integrate them into the main tags.
+    - Not sure why figure section is not working with @media queries.
 1. Nav Bar:  How do you order the sequence properly?
     - Currently it uses the creation date it was created
     - Need to use Templating Language to sort it.

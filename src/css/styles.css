@@ -2,13 +2,77 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #333;
   font-size: 100%;
-  max-width: 980px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #ddd;
+  }
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color: #dbd1b5;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #cec2c2;
+  }
+}
+@media screen and (min-width: 980px) {
+  body {
+    background-color: rgb(54, 54, 246);
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 h2 {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h3 h3 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p p {
+    margin: 5px 5px 5px 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  p p {
+    margin: 10px 16px 10px 16px;
+  }
 }
 
 img {
   width: 100%;
   height: 100%;
+}
+
+figure {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+@media screen and (min-width: 480px) {
+  figure figure {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+  }
 }
 
 #pull {
@@ -18,7 +82,12 @@ img {
   padding-left: 12px;
   width: 100vh;
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  #pull {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
   #pull {
     display: none;
   }
@@ -40,7 +109,7 @@ nav ul {
   list-style: none;
   background-color: #007eb6;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   nav ul {
     display: flex;
     justify-content: space-around;
@@ -63,7 +132,7 @@ nav a:hover {
 nav li:hover:not(.active) {
   background-color: #00a1e9;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   nav li {
     flex-grow: 1;
   }
@@ -82,40 +151,6 @@ nav .active a {
   flex-direction: column;
   position: absolute;
   width: 100%;
-}
-
-@media (max-width: 480px) {
-  body {
-    background-color: #ddd;
-  }
-  h1 {
-    font-size: x-large;
-  }
-  h2 {
-    font-size: large;
-  }
-  figure {
-    margin: 0;
-  }
-  p {
-    margin: 5px 5px 5px 5px;
-  }
-}
-@media screen and (min-width: 480px) {
-  body {
-    background-color: #dbd1b5;
-  }
-  p {
-    margin: 10px 16px 10px 16px;
-  }
-  h3 {
-    margin-left: 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
-    background-color: #cec2c2;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

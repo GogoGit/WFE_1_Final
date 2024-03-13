@@ -47,14 +47,13 @@ function handleSubmit(event) {
     body: new URLSearchParams(formData).toString(),
     // body: JSON.stringify(formData),
   })
-    .then(() => navigate("/thank-you/"));
+    .then(() => navigate("/thank-you/"))
     .catch((error) => alert(error));
     // .then((response) => response.json())
     // .then((data) => console.log(data))
     // .catch((error) => {
     //     console.error('I believe you need to have a valid API URL to post to???:', error);
-  });
-}
+  };
 
 
 //Event listeners
