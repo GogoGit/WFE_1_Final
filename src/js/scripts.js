@@ -42,12 +42,16 @@ function handleSubmit(event) {
       "Content-Type": "application/json",
     },
     method: "POST",
-    body: JSON.stringify(formData),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+    // body: JSON.stringify(formData),
   })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => {
-        console.error('I believe you need to have a valid API URL to post to???:', error);
+    .then(() => navigate("/thank-you/"))  
+    .catch((error) => alert(error));
+    // .then((response) => response.json())
+    // .then((data) => console.log(data))
+    // .catch((error) => {
+    //     console.error('I believe you need to have a valid API URL to post to???:', error);
   });
 }
 
